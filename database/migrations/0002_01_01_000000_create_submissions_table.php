@@ -13,10 +13,13 @@ return new class extends Migration
     {
         Schema::create('submissions', function (Blueprint $table) {
             $table->id();
+            //TODO do not accept null values
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('ssn')->unique();
+            $table->boolean('is_enabled')->default(false);
+            //TODO add boolean for is_enabled. Default to false.
             $table->timestamps();
         });
     }
