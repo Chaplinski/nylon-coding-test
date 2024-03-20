@@ -26,19 +26,19 @@
             <form name="add-submission-form" id="add-submission-form" method="post" action="{{url('submit')}}">
                 @csrf
                 <div class="row">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-6 col-lg-3">
                         <label for="firstName">First name</label>
                         <input type="text" id="firstName" name="firstName" class="form-control" required="">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-6 col-lg-3">
                         <label for="lastName">Last name</label>
                         <input type="text" id="lastName" name="lastName" class="form-control" required="">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-6 col-lg-3">
                         <label for="lastName">Email Address</label>
                         <input type="email" id="email" name="email" class="form-control" required="">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-6 col-lg-3">
                         <label for="lastName">Social Security Number</label>
                         <input type="text" id="ssn" name="ssn" class="form-control" required="">
                     </div>

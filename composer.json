@@ -9,7 +9,8 @@
         "filament/filament": "^3.2",
         "filament/tables": "^3.2",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "spatie/db-dumper": "^3.4"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.0",
