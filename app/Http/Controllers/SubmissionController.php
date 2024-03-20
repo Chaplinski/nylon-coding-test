@@ -15,7 +15,7 @@ class SubmissionController extends Controller
         //In line with "fail fast" - if the code is going to "fail" then do it right away.
         //using compute resources to check string length is low cost, so this check comes first
         if (strlen($ssn) !== 9) {
-            return redirect('/')->with('error', 'SSN must only be numbers and dashes');
+            return redirect('/')->with('error', 'SSN must include exactly nine numbers, with optional dashes');
         }
 
         //querying the database is a higher cost, so email check comes second
