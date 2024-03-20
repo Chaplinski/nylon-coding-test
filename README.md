@@ -32,6 +32,7 @@ Here you can view, sort, and enable the Submissions that have been input on the 
 
 ## Notes
 - SQL dump can be found [here](dump.sql)
+- The "Submission" object should have been named something like "Person". The submissions are not of the type "User", but "Submission" is very vague, and would be hard to understand when revisting the project in the future.
 - Requirements called for Ubuntu 22.04 but this uses Alpine Linux 3.18. I didn't want to sink too much time into building a docker image, which is (in my opinion) my weakest part of this submission.
 
 ## External libraries
