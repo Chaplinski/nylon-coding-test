@@ -12,6 +12,8 @@ services:
             - .:/var/www/html/
             - ./logs/nginx:/var/log/nginx/
         container_name: nginx
+        depends_on:
+            - php
     php:
         build:
             context: .
