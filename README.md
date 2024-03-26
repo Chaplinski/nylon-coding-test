@@ -3,8 +3,6 @@
 ### Clone repo locally
 `git clone git@github.com:Chaplinski/nylon-coding-test.git`
 
-from the project's root directory run `composer install`
-
 ### Docker
 run `docker-compose up` from the project root directory
 
@@ -13,6 +11,8 @@ After images build and containers launch, run the following commands:
 `docker-compose exec php sh`
 
 `cd /var/www/html`
+
+`composer install --ignore-platform-reqs`
 
 `php artisan migrate`
 
